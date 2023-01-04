@@ -4,21 +4,21 @@ pipeline {
 
    stages {
    
-     stage('FirstStage') { 
+     stage('AWS') { 
         steps { 
-           sh 'echo "firststage"' 
+           sh 'echo "Joining AWS"' 
         }
      }
      
-     stage('2ndTest') { 
+     stage('Azure') { 
         steps { 
-           sh 'echo "testing application..."'
+           sh 'echo "Microsoft"'
         }
       }
 
-         stage("3rdDeploy application") { 
+         stage("GCP") { 
          steps { 
-           sh 'echo "deploying application..."'
+           sh 'echo "Google cloud platform"'
          }
 
      }
